@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+    <string name="button">Button</string>
+    <string name="next_activity">第二个页面</string>
+    <string name="next_page_button">下页面</string>
+    <string name="alert_button">alert退出</string>
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ch02_Button</string>
+    <string name="zoom_textview">TextView</string>
+    <string name="zoom_button">放大</string>
+</resources>

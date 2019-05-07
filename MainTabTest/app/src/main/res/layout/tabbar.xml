@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="49dp"
+    android:orientation="horizontal"
+    android:background="#FFFFFF">
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/id_btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="#FFFFFF"
+            android:src="@drawable/ic_01_selected"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/id_btn_model"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="#FFFFFF"
+            android:src="@drawable/ic_02_n"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/id_btn_mall"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="#FFFFFF"
+            android:src="@drawable/ic_03_n"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/id_btn_my"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="#FFFFFF"
+            android:src="@drawable/ic_04_n"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

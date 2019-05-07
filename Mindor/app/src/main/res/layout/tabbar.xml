@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="49dp"
+    android:background="#ffffff"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/id_tab_home"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/id_tab_btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:scaleType="fitCenter"
+            android:background="#FFFFFF"
+            android:src="@drawable/ic_01_selected"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_tab_model"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/id_tab_btn_model"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:scaleType="fitCenter"
+            android:background="#FFFFFF"
+            android:src="@drawable/ic_02_n"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_tab_mall"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/id_tab_btn_mall"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:scaleType="fitCenter"
+            android:background="#FFFFFF"
+            android:src="@drawable/ic_03_n"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_tab_my"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/id_tab_btn_my"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:scaleType="fitCenter"
+            android:background="#FFFFFF"
+            android:src="@drawable/ic_04_n"/>
+
+    </LinearLayout>
+
+</LinearLayout>
