@@ -34,11 +34,13 @@ class WashMachine(var module: String, var size: Int) {
                 1 -> {
                     println("放水")
                     println("轻柔开始，发动机转速 慢")
+                    setMoterSpeed(100)
                     println("洗完啦")
                 }
                 2 -> {
                     println("放水")
                     println("狂柔开始，发动机转速 快")
+                    setMoterSpeed(1000)
                     println("洗完啦")
                 }
                 else -> {
@@ -46,5 +48,9 @@ class WashMachine(var module: String, var size: Int) {
                 }
             }
         }
+    }
+
+    private fun setMoterSpeed(speed: Int) {
+        println("当前发动机转速为${speed}圈/秒")
     }
 }
