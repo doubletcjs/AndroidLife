@@ -2,48 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09bdbbd0-aa4c-443d-a221-8cd6f861918b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.gradle/5.1.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.gradle/5.1.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/Kotlin.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/kotlinc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloWorld.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/HelloWorld/BasciType" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/HelloWorld/BooleanTest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/HelloWorld/CalcDemo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/HelloWorld/META-INF/HelloWorld.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/BasciType" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/BooleanTest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/CalcDemo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/ClassDemo.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/DemoFunction.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/DiaryTools.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/Father.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/Function.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/HelloWorld.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/Human.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/ListMap.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/LoopRange.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/Man.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/RecursiveDemo.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/Son.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/TestFather.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/TestHuman.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/WashDemo.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/WashMachine.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/WhenDemo.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/Woman.kt" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ImageHandle/src/Test.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ImageHandle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ImageHandle/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -121,6 +81,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,7 +98,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -250,7 +210,7 @@
     <frame x="714" y="89" width="1750" height="1116" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16100703" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16276346" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
