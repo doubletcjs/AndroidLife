@@ -1,0 +1,5 @@
+interface iMan {
+    fun xiaodidi() {
+
+    }
+}
