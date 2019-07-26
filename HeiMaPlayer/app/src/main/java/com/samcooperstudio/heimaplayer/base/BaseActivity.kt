@@ -1,7 +1,9 @@
 package com.samcooperstudio.heimaplayer.base
 
+import android.app.Activity
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast
 
 abstract class BaseActivity: AppCompatActivity() {
@@ -32,7 +34,17 @@ abstract class BaseActivity: AppCompatActivity() {
      */
     abstract fun getLayoutId(): Int
 
+    /**
+     * 开启activity并且finish当前界面
+     */
+    inline fun <reified T: Activity> startThenFinishActivity() {
+        startActivity<T>()
+        finish()
+    }
+
     protected open fun myToast(msg: String) {
         runOnUiThread { toast(msg) }
     }
+
+
 }

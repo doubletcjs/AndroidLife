@@ -1,13 +1,37 @@
 package com.samcooperstudio.heimaplayer.ui.activity
 
-import android.support.v7.app.AppCompatActivity
-import android.os.Bundle
+import android.support.v7.widget.Toolbar
 import com.samcooperstudio.heimaplayer.R
+import com.samcooperstudio.heimaplayer.base.BaseActivity
+import com.samcooperstudio.heimaplayer.util.FragmentUtil
+import com.samcooperstudio.heimaplayer.util.ToolBarManager
+import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+import org.jetbrains.anko.find
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+class MainActivity : BaseActivity(), ToolBarManager {
+    override val toolBar: Toolbar by lazy { find <Toolbar> (R.id.toolbar) }
+
+    override fun getLayoutId(): Int {
+        return R.layout.activity_main
+    }
+
+    override fun initData() {
+        initMainToolBar()
+    }
+
+    override fun onEnterAnimationComplete() {
+        bottom_bar_container.setTabCurrenItem(0)
+    }
+
+    override fun initListener() {
+        bottom_bar_container.setOnTabChangedListner {
+            val transaction = supportFragmentManager.beginTransaction()
+            FragmentUtil.fragmentUtil.getFragment(it)?.let { it1 ->
+                transaction.replace(R.id.container,
+                    it1, it.toString())
+            }
+            transaction.commit()
+        }
     }
 }
