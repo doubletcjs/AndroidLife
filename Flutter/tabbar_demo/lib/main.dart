@@ -53,20 +53,20 @@ class SelectView extends StatelessWidget {
       color: Colors.white,
       child: Center(
         child: Column(
-        mainAxisSize: MainAxisSize.min,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: <Widget>[
-          Icon(
-            itemView.icon,
-            size: 128.0,
-            color: textStyle.color,
-          ),
-          Text(
-            itemView.title,
-            style: textStyle,
-          )
-        ],
-      ),
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Icon(
+             itemView.icon,
+             color: textStyle.color,
+             size: 128.0, 
+            ),
+            Text(
+              itemView.title,
+              style: textStyle,
+            )
+          ],
+        ),
       ),
     );
   }
