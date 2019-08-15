@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     // TODO: implement build
     return Center(
       child: Text(
-        "测试11122",
+        "你好Flutter",
         textDirection: TextDirection.ltr,
         style: TextStyle(
           fontSize: 20.0,
