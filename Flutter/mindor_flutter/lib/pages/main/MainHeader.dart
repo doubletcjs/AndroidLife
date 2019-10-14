@@ -40,7 +40,7 @@ class _MainHeaderState extends State<MainHeader> {
             ),
             Positioned(
               right: 16,
-              top: MediaQuery.of(context).padding.top,
+              top: MediaQuery.of(context).padding.top+11,
               child: Container(
                 width: 23,
                 height: 23,

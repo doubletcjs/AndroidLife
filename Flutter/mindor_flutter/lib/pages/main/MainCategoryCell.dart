@@ -5,11 +5,12 @@ class MainCategoryCell extends StatefulWidget {
   String imageUrl;
   int onlineCount = 0;
   int totalCount = 0;
+  final onPressed;
 
-  MainCategoryCell(this.imageUrl, this.name, this.onlineCount, this.totalCount);
+  MainCategoryCell(this.imageUrl, this.name, this.onlineCount, this.totalCount, this.onPressed);
 
   _MainCategoryCellState createState() => _MainCategoryCellState(
-      this.imageUrl, this.name, this.onlineCount, this.totalCount);
+      this.imageUrl, this.name, this.onlineCount, this.totalCount, this.onPressed);
 }
 
 class _MainCategoryCellState extends State<MainCategoryCell> {
@@ -17,9 +18,10 @@ class _MainCategoryCellState extends State<MainCategoryCell> {
   String imageUrl;
   int onlineCount = 0;
   int totalCount = 0;
+  final onPressed;
 
   _MainCategoryCellState(
-      this.imageUrl, this.name, this.onlineCount, this.totalCount);
+      this.imageUrl, this.name, this.onlineCount, this.totalCount, this.onPressed);
 
   @override
   Widget build(BuildContext context) {
@@ -56,9 +58,7 @@ class _MainCategoryCellState extends State<MainCategoryCell> {
                     bottom: 0,
                     child: FlatButton(
                       padding: EdgeInsets.all(0.0),
-                      onPressed: () {
-                        print('object');
-                      },
+                      onPressed: this.onPressed,
                       child: null,
                       shape: RoundedRectangleBorder(
                           side: BorderSide.none,

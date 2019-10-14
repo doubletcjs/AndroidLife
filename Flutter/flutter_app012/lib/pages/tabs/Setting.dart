@@ -9,8 +9,27 @@ class SettingPage extends StatefulWidget {
 class _SettingPageState extends State<SettingPage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-       child: Text('设置'),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        RaisedButton(
+          child: Text(
+            '登录'
+          ),
+          onPressed: () {
+            Navigator.of(context).pushNamed('/login');
+          },
+        ),
+        RaisedButton(
+          child: Text(
+            '注册'
+          ),
+          onPressed: () {
+            Navigator.of(context).pushNamed('/registerfirst');
+          },
+        )
+      ],
     );
   }
 }

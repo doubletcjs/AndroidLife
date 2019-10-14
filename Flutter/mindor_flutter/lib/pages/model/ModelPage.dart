@@ -1,6 +1,6 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart'; 
+import 'package:flutter/material.dart';
 import '../main/MainHeader.dart';
+import 'ModelMainCell.dart';
 
 class ModelPage extends StatefulWidget {
   ModelPage({Key key}) : super(key: key);
@@ -25,89 +25,14 @@ class _ModelPageState extends State<ModelPage> {
                 child: ListView(
                   padding: EdgeInsets.all(0),
                   children: <Widget>[
-                    Container(
-                      color: Colors.white,
-                      height: 60,
-                      child: Stack(
-                        children: <Widget>[
-                          Positioned(
-                            left: 15,
-                            top: 14,
-                            child: Container(
-                              width: 32,
-                              height: 32,
-                              child: ClipRRect(
-                                child: FadeInImage.assetNetwork(
-                                    placeholder: 'images/placeholder.png',
-                                    image:
-                                        'https://www.itying.com/images/flutter/1.png',
-                                    fit: BoxFit.cover),
-                                borderRadius: BorderRadius.circular(16),
-                              ),
-                            ),
-                          ),
-                          Positioned(
-                            left: 57,
-                            top: 14,
-                            right: 50,
-                            child: Text(
-                              '主卧',
-                              style: TextStyle(
-                                fontSize: 14,
-                                color: Color.fromRGBO(51, 51, 51, 1)
-                              )
-                            ),
-                          ),
-                          Positioned(
-                            left: 57,
-                            bottom: 13,
-                            right: 50,
-                            child: Text(
-                              '10:30开启-11:30关闭',
-                              style: TextStyle(
-                                fontSize: 9,
-                                color: Color.fromRGBO(153, 153, 153, 1)
-                              )
-                            ),
-                          ),
-                          Positioned(
-                            left: 0,
-                            bottom: 0,
-                            right: 0,
-                            child: Container(
-                              height: 1,
-                              color: Color.fromRGBO(244, 244, 244, 1),
-                            ),
-                          ),
-                          Positioned(
-                            left: 0,
-                            top: 0,
-                            right: 0,
-                            bottom: 0,
-                            child: FlatButton(
-                              padding: EdgeInsets.all(0), 
-                              child: null,
-                              onPressed: () {
-
-                              },
-                            ),
-                          ),
-                          Positioned(
-                            right: 15,
-                            top: 0,
-                            bottom: 0,
-                            child: Center(
-                                child: CupertinoSwitch(
-                                  value: false,
-                                  onChanged: (isOn) {
-
-                                  },
-                                ),
-                              ),
-                          )
-                        ],
-                      ),
-                    )
+                    ModelMainCell(
+                        '回家模式', Image.asset('images/icon_home_n_model.png', fit: BoxFit.cover), '19:00-23:00', false),
+                    ModelMainCell(
+                        '外出模式', Image.asset('images/icon_out_n.png', fit: BoxFit.cover), '22:00关闭', false),
+                    ModelMainCell(
+                        '睡眠模式', Image.asset('images/icon_sleep_n.png', fit: BoxFit.cover), '23:00开启', true),
+                    ModelMainCell(
+                        '早起模式', Image.asset('images/icon_getup_n.png', fit: BoxFit.cover), '19:00-23:00', false)
                   ],
                 ),
               ),

@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';  
 import '../personal/PersonalPage.dart';
 import '../model/ModelPage.dart';
 import '../main/MainPage.dart';
@@ -17,7 +17,7 @@ class _TabPageState extends State<TabPage> {
     ModelPage(),
     StorePage(),
     PersonalPage()
-  ];
+  ]; 
 
   int _currentIndex = 0;
   Widget _getBarIcon(index) {
@@ -29,7 +29,7 @@ class _TabPageState extends State<TabPage> {
 
     switch (index) {
       case 0:
-        iconAsset = 'images/icon_home_n.png';
+        iconAsset = 'images/icon_home_n.png'; 
         break;
       case 1:
         iconAsset = 'images/icon_mode_n.png';
@@ -45,14 +45,19 @@ class _TabPageState extends State<TabPage> {
         break;
     }
 
-    return Image.asset(
-      iconAsset,
-      color: color,
+    return Container(
+      width: 22,
+      height: 22,
+      child: Image.asset(
+        iconAsset,
+        color: color,
+        fit: BoxFit.fill,
+      ),
     );
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) {  
     return Scaffold(
       body: this._pageList[this._currentIndex],
       bottomNavigationBar: BottomNavigationBar(
@@ -90,6 +95,6 @@ class _TabPageState extends State<TabPage> {
           });
         },
       ),
-    ); 
+    );
   }
 }

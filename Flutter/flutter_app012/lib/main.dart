@@ -11,12 +11,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       // home: Tabs(),
       initialRoute: '/', //初始化加载的路由
-      theme: ThemeData.dark(),
+      // theme: ThemeData.dark(),
       // routes: {
       //   '/form': (context) => FormPage(),
       //   '/search': (context) => SearchPage(),
       // },
       onGenerateRoute: routes.onGenerateRoute,
+      debugShowCheckedModeBanner: false,
     );
   }
 }

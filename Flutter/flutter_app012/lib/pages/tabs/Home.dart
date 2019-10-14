@@ -39,6 +39,30 @@ class _HomePageState extends State<HomePage> {
             Navigator.pushNamed(context, '/product');
           },
         ),
+        RaisedButton(
+          child: Text(
+            '跳转到AppBarDemo',
+          ),
+          onPressed: () {
+            Navigator.pushNamed(context, '/appbardemo');
+          },
+        ),
+        RaisedButton(
+          child: Text(
+            '跳转到TabBarController',
+          ),
+          onPressed: () {
+            Navigator.pushNamed(context, '/tabbarcontroller');
+          },
+        ),
+        RaisedButton(
+          child: Text(
+            '按钮演示',
+          ),
+          onPressed: () {
+            Navigator.pushNamed(context, '/buttonpage');
+          },
+        )
       ],
     );
   }

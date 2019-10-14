@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';  
 import 'MainHeader.dart';
 import 'MainCategoryCell.dart';
+import 'package:mindor_flutter/routes/Route.dart' as route;
 
 class MainPage extends StatefulWidget {
   MainPage({Key key}) : super(key: key);
@@ -9,8 +10,20 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
+  _onPressed(String title) {
+    Navigator.pushNamed(context, '/maincategorylist', arguments: title);
+  }
+
+  // @override
+  // void initState() {
+  //   route.loginState(context);
+  //   super.initState();
+  // }
+
   @override
   Widget build(BuildContext context) {
+    route.loginState(context);
+    
     return Scaffold(
       body: Center(
         child: Stack(
@@ -36,17 +49,23 @@ class _MainPageState extends State<MainPage> {
                         'https://www.itying.com/images/flutter/1.png',
                         '空气监测仪',
                         0,
-                        2),
+                        2, () {
+                      this._onPressed('空气监测仪');
+                    }),
                     MainCategoryCell(
                         'https://www.itying.com/images/flutter/2.png',
                         '智能插座',
                         1,
-                        4),
+                        4, () {
+                      this._onPressed('智能插座');
+                    }),
                     MainCategoryCell(
                         'https://www.itying.com/images/flutter/3.png',
                         '智能插座_易燃气体',
                         1,
-                        1)
+                        1, () {
+                      this._onPressed('智能插座_易燃气体');
+                    })
                   ],
                 ),
               ),
