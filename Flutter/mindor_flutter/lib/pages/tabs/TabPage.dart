@@ -4,6 +4,7 @@ import '../personal/PersonalPage.dart';
 import '../model/ModelPage.dart';
 import '../main/MainPage.dart';
 import '../store/StorePage.dart';
+import 'package:mindor_flutter/routes/Route.dart' as route;
 
 class TabPage extends StatefulWidget {
   TabPage({Key key}) : super(key: key);
@@ -58,6 +59,8 @@ class _TabPageState extends State<TabPage> {
 
   @override
   Widget build(BuildContext context) {  
+    route.loginState(context);
+
     return Scaffold(
       body: this._pageList[this._currentIndex],
       bottomNavigationBar: BottomNavigationBar(
@@ -92,6 +95,7 @@ class _TabPageState extends State<TabPage> {
         onTap: (index) {
           setState(() {
             this._currentIndex = index;
+            route.loginState(context);
           });
         },
       ),

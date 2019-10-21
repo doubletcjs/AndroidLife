@@ -23,7 +23,8 @@ logout(context) async {
   await preferences.setBool(kAccountLogin, false);
 
   Navigator.of(context).pushAndRemoveUntil(
-      MaterialPageRoute(builder: (context) => LoginPage()),
+      MaterialPageRoute(
+          fullscreenDialog: true, builder: (context) => LoginPage()),
       (route) => route == null);
 }
 
@@ -32,7 +33,8 @@ login(context) async {
   await preferences.setBool(kAccountLogin, true);
 
   Navigator.of(context).pushAndRemoveUntil(
-      MaterialPageRoute(builder: (context) => TabPage()),
+      MaterialPageRoute(
+          fullscreenDialog: true, builder: (context) => TabPage()),
       (route) => route == null);
 }
 

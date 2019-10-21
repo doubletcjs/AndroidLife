@@ -33,6 +33,7 @@ class _PersonalMainListState extends State<PersonalMainList> {
           _PersonalMainListCell(
               cellIconAsset: 'images/icon_personal.png',
               cellName: '个人信息',
+              showLine: true,
               handle: this.widget.mainListHandle),
           _PersonalMainListCell(
               cellIconAsset: 'images/icon_clear.png',
@@ -43,6 +44,7 @@ class _PersonalMainListState extends State<PersonalMainList> {
           _PersonalMainListCell(
               cellIconAsset: 'images/icon_update.png',
               cellName: '检查更新',
+              showLine: true,
               handle: this.widget.mainListHandle),
           _PersonalMainListCell(
               cellIconAsset: 'images/icon_about.png',
@@ -73,13 +75,14 @@ class _PersonalMainListCell extends StatefulWidget {
   final cellName;
   final cellArrowText;
   final isLogout;
-  final bool endCell = false;
+  final showLine;
 
   _PersonalMainListCell(
       {this.cellIconAsset,
       this.cellName,
       this.cellArrowText = '',
       this.isLogout = false,
+      this.showLine = false,
       this.handle});
 
   __PersonalMainListCellState createState() => __PersonalMainListCellState();
@@ -183,6 +186,15 @@ class __PersonalMainListCellState extends State<_PersonalMainListCell> {
                               )
                             ],
                           ),
+                  ),
+                ),
+                Positioned(
+                  left: 45,
+                  bottom: 0,
+                  right: 0,
+                  child: Container(
+                    height: this.widget.showLine == true ? 0.8 : 0,
+                    color: Color.fromRGBO(229, 229, 229, 0.6),
                   ),
                 ),
                 Positioned(

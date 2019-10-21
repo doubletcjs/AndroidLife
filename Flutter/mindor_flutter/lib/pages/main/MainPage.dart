@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';  
 import 'MainHeader.dart';
 import 'MainCategoryCell.dart';
-import 'package:mindor_flutter/routes/Route.dart' as route;
 
 class MainPage extends StatefulWidget {
   MainPage({Key key}) : super(key: key);
@@ -12,18 +11,10 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   _onPressed(String title) {
     Navigator.pushNamed(context, '/maincategorylist', arguments: title);
-  }
-
-  // @override
-  // void initState() {
-  //   route.loginState(context);
-  //   super.initState();
-  // }
+  } 
 
   @override
-  Widget build(BuildContext context) {
-    route.loginState(context);
-    
+  Widget build(BuildContext context) { 
     return Scaffold(
       body: Center(
         child: Stack(
